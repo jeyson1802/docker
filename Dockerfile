@@ -78,6 +78,9 @@ COPY plugins.sh /usr/local/bin/plugins.sh
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 # install docker 
+
+USER root
+
 RUN apt-get update && \
     apt-get -y install apt-transport-https \
       ca-certificates \
