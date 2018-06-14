@@ -81,7 +81,7 @@ COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 USER root
 
-RUN mkdir -p /tmp/dkey
+RUN touch /tmp/dkey
 
 RUN apt-get update && \
     apt-get -y install apt-transport-https \
